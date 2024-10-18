@@ -129,6 +129,21 @@
   position: relative;
   top: -10px; /* Move the image up by 10px */
 }
+.img-move-right {
+  position: relative;
+  left: 80px; /* Move the image right by 10px */
+  top: -10px; /* Move the image up by 10px */
+}
+.img-move-right-v2 {
+  position: relative;
+  left: 50px; /* Move the image right by 10px */
+  top: -10px; /* Move the image up by 10px */
+}
+.img-move-right-v3 {
+  position: relative;
+  left: 20px; /* Move the image right by 10px */
+  top: -10px; /* Move the image up by 10px */
+}
 #controls {
   display: flex;
   justify-content: center;

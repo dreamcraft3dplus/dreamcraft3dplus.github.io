@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
-    <title>DreamCraft3D: Hierarchical 3D Generation with Bootstrapped Diffusion Prior</title>
+    <title>DreamCraft3D++: Hierarchical 3D Generation with Bootstrapped Diffusion Prior</title>
 	<link rel="icon" type="image/x-icon" href="../assets/css/images/favicon.ico">
     <meta content="DreamCraft3D++: Efficient Hierarchical 3D Generation with Multi-Plane Reconstruction Model" name="description" />
     <meta content="summary" name="twitter:card" />
@@ -61,7 +61,7 @@
                         class="text-span_nerf"></span></a><sup> 1</sup>,&nbsp;&nbsp;
                     <a href="https://scholar.google.com/citations?user=a7AMvgkAAAAJ&hl=zh-CN" target="_blank" class="nerf_authors_v2">Yangguang Li<span
                         class="text-span_nerf"></span></a><sup> 2</sup>,&nbsp;&nbsp;
-                    <a href="https://yanpei.me/" target="_blank" class="nerf_authors_v2">YanPei Cao<span
+                    <a href="https://yanpei.me/" target="_blank" class="nerf_authors_v2">Yanpei Cao<span
                         class="text-span_nerf"></span></a><sup> 2</sup>,&nbsp;&nbsp;
                     <a href="https://bo-zhang.me/" target="_blank" class="nerf_authors_v2">Bo Zhang<span
                         class="text-span_nerf"></span></a><sup> 3</sup>,&nbsp;&nbsp;
@@ -75,11 +75,11 @@
                 </div>
 
                 <div class="external-link">
-                    <a class="btn" href="https://arxiv.org/abs/2310.16818" role="button" target="_blank">
+                    <a class="btn" href="http://arxiv.org/abs/2410.12928" role="button" target="_blank">
                         <i class="ai ai-arxiv"></i> Arxiv </a>
-                    <a class="btn" href="paper/Paper_high_res.pdf" role="button" target="_blank">
+                    <a class="btn" href="paper/DreamCraft3D++.pdf" role="button" target="_blank">
                         <i class="fa fa-file-pdf"></i> Paper </a>
-                    <a class="btn" href="https://github.com/deepseek-ai/DreamCraft3D" role="button" target="_blank" disabled>
+                    <a class="btn" href="https://github.com/MrTornado24/DreamCraft3D_Plus" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-github"></i> Code </a>
                     <a class="btn btn-large btn-light" href="https://youtu.be/0FazXENkQms" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-youtube"></i> Video </a>
@@ -137,7 +137,22 @@
             <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/videos/batman.mp4"></video>
             </div>
         </div> -->
-        
+        <div class="grid-container-img-video">
+            <div>
+                <img class='img-move-right' src="assets_dreamcraft3d/demos/img11.png"style="width:50%; height:auto;">
+            </div>
+            <div>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/demos/outputs_h264/video11.mp4" ></video>
+            </div>
+        </div>
+        <div class="grid-container-img-video">
+            <div>
+                <img class='img-move-right-v2' src="assets_dreamcraft3d/demos/img12.png" style="width:60%; height:auto;">
+            </div>
+            <div>
+                <video class="video" loop playsinline autoPlay muted src="assets_dreamcraft3d/demos/outputs_h264/video12.mp4"></video>
+            </div>
+        </div>
         <div class="grid-container-img-video">
             <div>
                 <img class='img-move-up' src="assets_dreamcraft3d/demos/img1.png">
@@ -200,43 +215,7 @@
         <p class="grid-item">
             The following results are animated by <a href="https://www.mixamo.com/">Mixamo</a>.
         </p>
-        <div class="grid-container-3">
-            <!-- autoplay shadow-intensity="1" -->
-            <div class="video">
-                <model-viewer src="assets_dreamcraft3d/meshes/dynamic/luo_knee.glb" 
-                poster="assets_dreamcraft3d/meshes/luigi.jpg" 
-                style="width: 100%; height: 300px;" 
-                camera-target="0m 0.5m 0m" 
-                camera-orbit = "0deg 75deg 50%" 
-                autoplay shadow-intensity="1"  
-                camera-controls 
-                touch-action="pan-y">
-                </model-viewer>
-              </div>
-            <div class="video">
-              <model-viewer src="assets_dreamcraft3d/meshes/dynamic/girl.glb" 
-              poster="assets_dreamcraft3d/meshes/luigi.jpg" 
-              style="width: 100%; height: 300px;" 
-              camera-target="0m 0.5m 0m" 
-              camera-orbit = "0deg 75deg 50%" 
-              autoplay shadow-intensity="1"  
-              camera-controls 
-              touch-action="pan-y">
-              </model-viewer>
-              </div>
-            <div class="video">
-                <model-viewer src="assets_dreamcraft3d/meshes/dynamic/girl2_wave.glb" 
-                poster="assets_dreamcraft3d/meshes/luigi.jpg" 
-                style="width: 100%; height: 300px;" 
-                camera-target="0m 0.5m 0m" 
-                camera-orbit = "0deg 75deg 50%" 
-                autoplay shadow-intensity="1"  
-                camera-controls 
-                touch-action="pan-y">
-                </model-viewer>
-              </div>
-            
-        </div>
+        
         <div class="grid-container-3">
             <!-- autoplay shadow-intensity="1" -->
             <div class="video">
@@ -274,6 +253,43 @@
               </div>
             
         </div>
+        <!-- <div class="grid-container-3"> -->
+            <!-- autoplay shadow-intensity="1" -->
+            <!-- <div class="video">
+                <model-viewer src="assets_dreamcraft3d/meshes/dynamic/antman.glb" 
+                poster="assets_dreamcraft3d/meshes/luigi.jpg" 
+                style="width: 100%; height: 300px;" 
+                camera-target="0m 0.5m 0m" 
+                camera-orbit = "0deg 75deg 50%" 
+                autoplay shadow-intensity="1"  
+                camera-controls 
+                touch-action="pan-y">
+                </model-viewer>
+              </div>
+            <div class="video">
+              <model-viewer src="assets_dreamcraft3d/meshes/dynamic/bboy.glb" 
+              poster="assets_dreamcraft3d/meshes/luigi.jpg" 
+              style="width: 100%; height: 300px;" 
+              camera-target="0m 0.5m 0m" 
+              camera-orbit = "0deg 75deg 50%" 
+              autoplay shadow-intensity="1"  
+              camera-controls 
+              touch-action="pan-y">
+              </model-viewer>
+              </div>
+            <div class="video">
+                <model-viewer src="assets_dreamcraft3d/meshes/dynamic/bigbear.glb" 
+                poster="assets_dreamcraft3d/meshes/luigi.jpg" 
+                style="width: 100%; height: 300px;" 
+                camera-target="0m 2m 0m" 
+                camera-orbit = "0deg 75deg 50%" 
+                autoplay shadow-intensity="1"  
+                camera-controls 
+                touch-action="pan-y">
+                </model-viewer>
+              </div> -->
+            
+        <!-- </div> --> 
 
 
     </div>
@@ -281,12 +297,15 @@
 <div class="white_section_nerf grey_container w-container">
 <h2 class="grey-heading_nerf">BibTeX</h2>
 <div class="bibtex">
-    <pre><code>@article{sun2024dreamcraft3d++,
-  title={DreamCraft3D++: Efficient Hierarchical 3D Generation with Multi-Plane Reconstruction Model},
-  author={Sun, Jingxiang and Zhang, Bo and Shao, Ruizhi and Wang, Lizhen and Liu, Wen and Xie, Zhenda and Liu, Yebin},
-  journal={arXiv preprint arXiv:2310.16818},
-  year={2024}
-  }</code></pre>
+    <pre><code>@misc{sun2024dreamcraft3defficienthierarchical3d,
+  title={DreamCraft3D++: Efficient Hierarchical 3D Generation with Multi-Plane Reconstruction Model}, 
+  author={Jingxiang Sun and Cheng Peng and Ruizhi Shao and Yuan-Chen Guo and Xiaochen Zhao and Yangguang Li and Yanpei Cao and Bo Zhang and Yebin Liu},
+  year={2024},
+  eprint={2410.12928},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2410.12928}, 
+}</code></pre>
     <pre><code>@article{sun2023dreamcraft3d,
   title={Dreamcraft3d: Hierarchical 3d generation with bootstrapped diffusion prior},
   author={Sun, Jingxiang and Zhang, Bo and Shao, Ruizhi and Wang, Lizhen and Liu, Wen and Xie, Zhenda and Liu, Yebin},
